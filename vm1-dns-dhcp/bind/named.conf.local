@@ -1,0 +1,9 @@
+zone "mylab.local" {
+    type master;
+    file "/etc/bind/db.mylab.local";
+};
+
+cone "100.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.100";
+};

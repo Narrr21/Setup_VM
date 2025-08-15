@@ -1,0 +1,11 @@
+$TTL    604800
+@       IN      SOA     ns1.mylab.local. admin.mylab.local. (
+                        2023111501      ; Serial
+                        604800          ; Refresh
+                        86400           ; Retry
+                        2419200         ; Expire
+                        604800 )        ; Negative Cache TTL
+
+@       IN      NS      ns1.mylab.local.
+1       IN      PTR     ns1.mylab.local.
+4       IN      PTR     web.mylab.local.

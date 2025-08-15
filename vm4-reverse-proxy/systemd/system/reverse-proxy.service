@@ -1,0 +1,15 @@
+[Unit]
+Description=Reverse Proxy Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/user/reverse-proxy
+ExecStart=/usr/bin/python3 /home/user/reverse-proxy/reverse_proxy.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
